@@ -73,6 +73,11 @@ RSpec.describe GramsController, type: :controller do
   end
 
   describe "grams#create action" do
+    it "should require users to be logged in" do
+      post :create, gram: {message: "Hello"}
+      expect(response).to redirect_to new_user_session_path
+    end
+
     it "should successfully create a new gram in our database" do
       user = FactoryGirl.create(:user)
       sign_in user
