@@ -32,6 +32,9 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
 gem 'simple_form'
 gem 'devise', '>= 3.2.4'
+gem 'carrierwave', '~> 0.11.0'
+gem 'figaro'
+gem 'fog'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
