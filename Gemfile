@@ -34,13 +34,14 @@ gem 'simple_form'
 gem 'devise', '>= 3.2.4'
 gem 'carrierwave', '~> 0.11.0'
 gem 'figaro'
-gem 'fog'
+gem 'fog', '~> 1.3.1'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
 
+#Rspec
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl_rails', '~> 4.0'
